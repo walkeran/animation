@@ -1,0 +1,118 @@
+/* this is where all of your CSS styles go */
+
+html,body {
+	width: 100%;
+	height: 100%;
+}
+
+#grid_container {
+	width: 400px;
+	height: 100px;
+	position: relative;
+	left: 50%;
+	top: 48%; /* for optical centering */
+	margin-top: -50px;
+	margin-left: -100px;
+}
+
+.mono {
+	font-family: 'Trebuchet ms';
+	font-size: 6em;
+	float: left;
+	margin-left: 5px;
+}
+
+@keyframes heart{
+    0%{opacity:0;}
+    100%{opacity:100;}
+}
+#heart{
+    width: 125px;
+    height: 100px;
+    position: absolute;
+    left: 700px;
+    top: 475px;
+    animation: heart 15s;
+    animation-fill-mode: forwards;
+    animation-delay: ;
+}
+
+@keyframes I_fade {
+    0% { opacity:0;}
+    100% { opacity:1;}
+}
+
+#I {
+    opacity: 0;
+    position: absolute;
+    left: 150px;
+    top: -100px;
+    animation:I_fade 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+@keyframes e_move{
+    0% {top: 0px; color: red;}
+    25% {top:150px; color: maroon;}
+    50% {left: -65px color: darkgreen;}
+    100% {top:150px; left:-65px; color: green;}
+}
+
+#e{
+    position: relative;
+    animation: e_move 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes a_move{
+    0% {top: 0px; color: red;}
+    25% {top:150px; color: maroon;}
+    50% {left: -65px color: darkgreen;}
+    100% {top:150px; left:-65px; color: green;}
+}
+
+#a{
+    position: relative;
+    animation: a_move 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+@keyframes r_move{
+    0% {top: 0px; color: red;}
+    25% {top:150px; color: maroon;}
+    50% {left: -65px color: darkgreen;}
+    100% {top:150px; left:-65px; color: green;}
+}
+
+#r{
+    position: relative;
+    animation: r_move 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+@keyframes t_move{
+    0% {top: 0px; color: red;}
+    25% {top:150px; color: maroon;}
+    50% {left: -65px color: darkgreen;}
+    100% {top:150px; left:-65px; color: green;}
+}
+#t{
+    position: relative;
+    animation: t_move 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+@keyframes h_move{
+    0% {top: 0px; color: red;}
+    25% {top:150px; color: maroon;}
+    50% {left: -65px color: darkgreen;}
+    100% {top:150px; right:-245px; color: green;}
+}
+#h{
+    position: relative;
+    animation: h_move 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+}
